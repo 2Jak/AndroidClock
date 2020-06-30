@@ -66,7 +66,10 @@ class JFTTimerView: UIView, UITextFieldDelegate
         TimerReference!.ResetTimer()
         updateTextFields()
         JFTTimer.SaveChanges()
-        animationLayer!.removeFromSuperlayer()
+        if animationLayer != nil
+        {
+            animationLayer!.removeFromSuperlayer()
+        }
         animationLayer = nil
     }
     
@@ -80,8 +83,7 @@ class JFTTimerView: UIView, UITextFieldDelegate
         if timerFinished
         {
             ResetButton.isHidden = false
-            animationLayer!.removeFromSuperlayer()
-            animationLayer = nil
+            OnResetButtonTouch(ResetButton)
         }
         return timerFinished
     }
