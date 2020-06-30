@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		892FE94E24A5DAF30032836C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE94D24A5DAF30032836C /* AppDelegate.swift */; };
+		892FE95524A5DAF30032836C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892FE95324A5DAF30032836C /* Main.storyboard */; };
+		892FE95724A5DB0A0032836C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892FE95624A5DB0A0032836C /* Assets.xcassets */; };
+		892FE95A24A5DB0A0032836C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892FE95824A5DB0A0032836C /* LaunchScreen.storyboard */; };
+		892FE96524A5E11F0032836C /* JFTAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE96424A5E11F0032836C /* JFTAlarmTableViewController.swift */; };
+		892FE96724A5E23B0032836C /* JFTAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE96624A5E23B0032836C /* JFTAlarm.swift */; };
+		892FE96A24A5F87D0032836C /* JFTJSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE96924A5F87D0032836C /* JFTJSONSerializable.swift */; };
+		892FE96C24A5FBAB0032836C /* JFTUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE96B24A5FBAB0032836C /* JFTUtilities.swift */; };
+		892FE96F24A6003B0032836C /* JFTTImer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FE96E24A6003B0032836C /* JFTTImer.swift */; };
+		8954121F24A8CC41003C3C75 /* JFTRegAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954121E24A8CC41003C3C75 /* JFTRegAlarmTableViewCell.swift */; };
+		8954122424A8DC35003C3C75 /* JFTExpanAlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954122324A8DC35003C3C75 /* JFTExpanAlarmTableViewCell.swift */; };
+		8954122724A8F0E4003C3C75 /* JFTRefreshable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954122624A8F0E4003C3C75 /* JFTRefreshable.swift */; };
+		8954122924A8F1BA003C3C75 /* JFTAddAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954122824A8F1BA003C3C75 /* JFTAddAlarmViewController.swift */; };
+		8954122B24A8F606003C3C75 /* JFTFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954122A24A8F606003C3C75 /* JFTFormatter.swift */; };
+		8954122D24A90CDB003C3C75 /* JFTTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8954122C24A90CDB003C3C75 /* JFTTimerView.xib */; };
+		8954122F24A90EB7003C3C75 /* JFTTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954122E24A90EB7003C3C75 /* JFTTimerView.swift */; };
+		8954123124A916E4003C3C75 /* JFTTimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8954123024A916E4003C3C75 /* JFTTimersViewController.swift */; };
+		8958B87B24AB38EA0047667A /* JFTClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958B87A24AB38EA0047667A /* JFTClockViewController.swift */; };
+		8958B87D24AB42760047667A /* CGRectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958B87C24AB42760047667A /* CGRectExt.swift */; };
+		8958B87F24AB7B850047667A /* CGPointExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8958B87E24AB7B850047667A /* CGPointExt.swift */; };
+		8968D27724A9D23200906A01 /* JFTAddTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968D27624A9D23200906A01 /* JFTAddTimerViewController.swift */; };
+		8968D27B24A9FFA000906A01 /* JFTStopperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968D27A24A9FFA000906A01 /* JFTStopperViewController.swift */; };
+		8968D27D24AA001C00906A01 /* JFTStopperResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968D27C24AA001C00906A01 /* JFTStopperResultTableViewCell.swift */; };
+		8968D27F24AA00B300906A01 /* JFTStopper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968D27E24AA00B300906A01 /* JFTStopper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		892FE94A24A5DAF30032836C /* AndroidClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		892FE94D24A5DAF30032836C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		892FE95424A5DAF30032836C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		892FE95624A5DB0A0032836C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		892FE95924A5DB0A0032836C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		892FE95B24A5DB0A0032836C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892FE96424A5E11F0032836C /* JFTAlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTAlarmTableViewController.swift; sourceTree = "<group>"; };
+		892FE96624A5E23B0032836C /* JFTAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTAlarm.swift; sourceTree = "<group>"; };
+		892FE96924A5F87D0032836C /* JFTJSONSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTJSONSerializable.swift; sourceTree = "<group>"; };
+		892FE96B24A5FBAB0032836C /* JFTUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTUtilities.swift; sourceTree = "<group>"; };
+		892FE96E24A6003B0032836C /* JFTTImer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTTImer.swift; sourceTree = "<group>"; };
+		8954121E24A8CC41003C3C75 /* JFTRegAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTRegAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		8954122324A8DC35003C3C75 /* JFTExpanAlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTExpanAlarmTableViewCell.swift; sourceTree = "<group>"; };
+		8954122624A8F0E4003C3C75 /* JFTRefreshable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTRefreshable.swift; sourceTree = "<group>"; };
+		8954122824A8F1BA003C3C75 /* JFTAddAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTAddAlarmViewController.swift; sourceTree = "<group>"; };
+		8954122A24A8F606003C3C75 /* JFTFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTFormatter.swift; sourceTree = "<group>"; };
+		8954122C24A90CDB003C3C75 /* JFTTimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JFTTimerView.xib; sourceTree = "<group>"; };
+		8954122E24A90EB7003C3C75 /* JFTTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTTimerView.swift; sourceTree = "<group>"; };
+		8954123024A916E4003C3C75 /* JFTTimersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTTimersViewController.swift; sourceTree = "<group>"; };
+		8958B87A24AB38EA0047667A /* JFTClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTClockViewController.swift; sourceTree = "<group>"; };
+		8958B87C24AB42760047667A /* CGRectExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExt.swift; sourceTree = "<group>"; };
+		8958B87E24AB7B850047667A /* CGPointExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExt.swift; sourceTree = "<group>"; };
+		8968D27624A9D23200906A01 /* JFTAddTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTAddTimerViewController.swift; sourceTree = "<group>"; };
+		8968D27A24A9FFA000906A01 /* JFTStopperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTStopperViewController.swift; sourceTree = "<group>"; };
+		8968D27C24AA001C00906A01 /* JFTStopperResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTStopperResultTableViewCell.swift; sourceTree = "<group>"; };
+		8968D27E24AA00B300906A01 /* JFTStopper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFTStopper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		892FE94724A5DAF30032836C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		892FE94124A5DAF30032836C = {
+			isa = PBXGroup;
+			children = (
+				892FE94C24A5DAF30032836C /* AndroidClock */,
+				892FE94B24A5DAF30032836C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		892FE94B24A5DAF30032836C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				892FE94A24A5DAF30032836C /* AndroidClock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		892FE94C24A5DAF30032836C /* AndroidClock */ = {
+			isa = PBXGroup;
+			children = (
+				8968D27824A9FBAC00906A01 /* StopperAssets */,
+				8954122024A8CF9D003C3C75 /* Extensions */,
+				892FE96D24A5FEAA0032836C /* TimerAssets */,
+				892FE96824A5F8230032836C /* Protocols */,
+				892FE96324A5E0E70032836C /* AlarmAssets */,
+				892FE94D24A5DAF30032836C /* AppDelegate.swift */,
+				892FE95324A5DAF30032836C /* Main.storyboard */,
+				892FE95624A5DB0A0032836C /* Assets.xcassets */,
+				892FE95824A5DB0A0032836C /* LaunchScreen.storyboard */,
+				892FE95B24A5DB0A0032836C /* Info.plist */,
+				892FE96B24A5FBAB0032836C /* JFTUtilities.swift */,
+				8954122A24A8F606003C3C75 /* JFTFormatter.swift */,
+				8958B87A24AB38EA0047667A /* JFTClockViewController.swift */,
+			);
+			path = AndroidClock;
+			sourceTree = "<group>";
+		};
+		892FE96324A5E0E70032836C /* AlarmAssets */ = {
+			isa = PBXGroup;
+			children = (
+				8954121D24A8CBFB003C3C75 /* TableViewCells */,
+				892FE96424A5E11F0032836C /* JFTAlarmTableViewController.swift */,
+				892FE96624A5E23B0032836C /* JFTAlarm.swift */,
+				8954122824A8F1BA003C3C75 /* JFTAddAlarmViewController.swift */,
+			);
+			path = AlarmAssets;
+			sourceTree = "<group>";
+		};
+		892FE96824A5F8230032836C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				892FE96924A5F87D0032836C /* JFTJSONSerializable.swift */,
+				8954122624A8F0E4003C3C75 /* JFTRefreshable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		892FE96D24A5FEAA0032836C /* TimerAssets */ = {
+			isa = PBXGroup;
+			children = (
+				892FE96E24A6003B0032836C /* JFTTImer.swift */,
+				8954122C24A90CDB003C3C75 /* JFTTimerView.xib */,
+				8954122E24A90EB7003C3C75 /* JFTTimerView.swift */,
+				8954123024A916E4003C3C75 /* JFTTimersViewController.swift */,
+				8968D27624A9D23200906A01 /* JFTAddTimerViewController.swift */,
+			);
+			path = TimerAssets;
+			sourceTree = "<group>";
+		};
+		8954121D24A8CBFB003C3C75 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8954121E24A8CC41003C3C75 /* JFTRegAlarmTableViewCell.swift */,
+				8954122324A8DC35003C3C75 /* JFTExpanAlarmTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8954122024A8CF9D003C3C75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8958B87C24AB42760047667A /* CGRectExt.swift */,
+				8958B87E24AB7B850047667A /* CGPointExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8968D27824A9FBAC00906A01 /* StopperAssets */ = {
+			isa = PBXGroup;
+			children = (
+				8968D27924A9FF1600906A01 /* TableViewCells */,
+				8968D27A24A9FFA000906A01 /* JFTStopperViewController.swift */,
+				8968D27E24AA00B300906A01 /* JFTStopper.swift */,
+			);
+			path = StopperAssets;
+			sourceTree = "<group>";
+		};
+		8968D27924A9FF1600906A01 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8968D27C24AA001C00906A01 /* JFTStopperResultTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		892FE94924A5DAF30032836C /* AndroidClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892FE95E24A5DB0B0032836C /* Build configuration list for PBXNativeTarget "AndroidClock" */;
+			buildPhases = (
+				892FE94624A5DAF30032836C /* Sources */,
+				892FE94724A5DAF30032836C /* Frameworks */,
+				892FE94824A5DAF30032836C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndroidClock;
+			productName = AndroidClock;
+			productReference = 892FE94A24A5DAF30032836C /* AndroidClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		892FE94224A5DAF30032836C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "hyperactive hi-tech ltd";
+				TargetAttributes = {
+					892FE94924A5DAF30032836C = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 892FE94524A5DAF30032836C /* Build configuration list for PBXProject "AndroidClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 892FE94124A5DAF30032836C;
+			productRefGroup = 892FE94B24A5DAF30032836C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				892FE94924A5DAF30032836C /* AndroidClock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		892FE94824A5DAF30032836C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892FE95A24A5DB0A0032836C /* LaunchScreen.storyboard in Resources */,
+				8954122D24A90CDB003C3C75 /* JFTTimerView.xib in Resources */,
+				892FE95724A5DB0A0032836C /* Assets.xcassets in Resources */,
+				892FE95524A5DAF30032836C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		892FE94624A5DAF30032836C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892FE96F24A6003B0032836C /* JFTTImer.swift in Sources */,
+				8954122F24A90EB7003C3C75 /* JFTTimerView.swift in Sources */,
+				8954122424A8DC35003C3C75 /* JFTExpanAlarmTableViewCell.swift in Sources */,
+				8968D27F24AA00B300906A01 /* JFTStopper.swift in Sources */,
+				892FE96524A5E11F0032836C /* JFTAlarmTableViewController.swift in Sources */,
+				8954122B24A8F606003C3C75 /* JFTFormatter.swift in Sources */,
+				8954121F24A8CC41003C3C75 /* JFTRegAlarmTableViewCell.swift in Sources */,
+				8958B87D24AB42760047667A /* CGRectExt.swift in Sources */,
+				8958B87F24AB7B850047667A /* CGPointExt.swift in Sources */,
+				892FE96724A5E23B0032836C /* JFTAlarm.swift in Sources */,
+				8968D27B24A9FFA000906A01 /* JFTStopperViewController.swift in Sources */,
+				892FE96A24A5F87D0032836C /* JFTJSONSerializable.swift in Sources */,
+				8958B87B24AB38EA0047667A /* JFTClockViewController.swift in Sources */,
+				8968D27D24AA001C00906A01 /* JFTStopperResultTableViewCell.swift in Sources */,
+				892FE94E24A5DAF30032836C /* AppDelegate.swift in Sources */,
+				8968D27724A9D23200906A01 /* JFTAddTimerViewController.swift in Sources */,
+				8954122724A8F0E4003C3C75 /* JFTRefreshable.swift in Sources */,
+				892FE96C24A5FBAB0032836C /* JFTUtilities.swift in Sources */,
+				8954122924A8F1BA003C3C75 /* JFTAddAlarmViewController.swift in Sources */,
+				8954123124A916E4003C3C75 /* JFTTimersViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		892FE95324A5DAF30032836C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892FE95424A5DAF30032836C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		892FE95824A5DB0A0032836C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892FE95924A5DB0A0032836C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		892FE95C24A5DB0A0032836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		892FE95D24A5DB0A0032836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		892FE95F24A5DB0B0032836C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AndroidClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JFT.AndroidClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		892FE96024A5DB0B0032836C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AndroidClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JFT.AndroidClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		892FE94524A5DAF30032836C /* Build configuration list for PBXProject "AndroidClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892FE95C24A5DB0A0032836C /* Debug */,
+				892FE95D24A5DB0A0032836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892FE95E24A5DB0B0032836C /* Build configuration list for PBXNativeTarget "AndroidClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892FE95F24A5DB0B0032836C /* Debug */,
+				892FE96024A5DB0B0032836C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 892FE94224A5DAF30032836C /* Project object */;
+}
